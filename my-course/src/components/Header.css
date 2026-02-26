@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #728156;
+  /* background: linear-gradient(135deg, #a32cdf, #106ad2); */
+  position: sticky;
+  z-index: 1000;
+  height: 35px;
+  align-items: center;
+}
+
+.header nav a {
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  /* text-align: right; */
+}
+
+.header nav a:hover {
+  text-decoration: none;
+}
+.logo {
+  height: 200px;       /* make it big */
+  width: auto;
+  flex-shrink: 0;     /* prevents moving to center */
+  margin-left: -55px; /* space between logo and nav */
+  margin-top: 10px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap; /* prevents breaking */
+}
+/* Nav stays RIGHT */
+.nav-links {
+  display: flex;
+  gap: 5px;
+  margin-left: auto; /* pushes nav to right */
+}
